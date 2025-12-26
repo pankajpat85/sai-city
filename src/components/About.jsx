@@ -22,12 +22,12 @@ const About = () => {
   const leaders = [
     {
       name: 'Santosh Dixit',
-      image: '/assets/images/santosh-dixit.png',
+      image: 'assets/images/santosh-dixit.png',
       bio: 'Santosh Dixit brings 15 years of experience in the real estate industry. With a passion for innovative design and sustainable development, he leads the team in creating exceptional living spaces that cater to modern needs.'
     },
     {
       name: 'Virendra Singh',
-      image: '/assets/images/virendra-singh.png',
+      image: 'assets/images/virendra-singh.png',
       bio: 'Virendra Singh brings 15 years of experience in the real estate industry. With a passion for innovative design and sustainable development, he leads the team in creating exceptional living spaces that cater to modern needs.'
     }
   ]
@@ -176,9 +176,7 @@ const About = () => {
                 whileHover={{ y: -10, boxShadow: "0 20px 50px rgba(255, 215, 0, 0.2)" }}
               >
                 <div className="leader-image">
-                  <img src={leader.image} alt={leader.name} onError={(e) => {
-                    e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80'
-                  }} />
+                  <img src={leader.image} alt={leader.name}/>
                 </div>
                 <div className="leader-info">
                   <h4>{leader.name}</h4>
