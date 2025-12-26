@@ -3,7 +3,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: 
+    linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.9) 100%),
+    url('/assets/images/sai-city-landing.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   padding-top: 80px;
 }
@@ -85,10 +90,16 @@
   background: transparent;
   color: #fff;
   border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play-icon {
   animation: pulse 2s ease-in-out infinite;
+  margin-right: 8px;
+  display: inline-block;
+  line-height: 0;
 }
 
 @keyframes pulse {

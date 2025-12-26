@@ -52,63 +52,46 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Contact Information</h3>
-            <div className="info-items">
-              <motion.div 
-                className="info-item"
-                whileHover={{ x: 10 }}
-              >
-                <FaMapMarkerAlt className="info-icon" />
-                <div>
-                  <h4>Sales Office Address</h4>
-                  <p>Sai City, Ramchandra Nagar,</p>
-                  <p>Nr. Sarvoday School,</p>
-                  <p>Kalyan-shil Road, Nilje,</p>
-                  <p>Dombivli (E) 421204</p>
-                </div>
-              </motion.div>
+            <div>
+              <h3>Contact Information</h3>
+              <div className="info-items">
+                <motion.div 
+                  className="info-item"
+                  whileHover={{ x: 10 }}
+                >
+                  <FaMapMarkerAlt className="info-icon" />
+                  <div>
+                    <h4>Sales Office Address</h4>
+                    <p>Sai City, Ramchandra Nagar,</p>
+                    <p>Nr. Sarvoday School,</p>
+                    <p>Kalyan-shil Road, Nilje,</p>
+                    <p>Dombivli (E) 421204</p>
+                  </div>
+                </motion.div>
 
-              <motion.div 
-                className="info-item"
-                whileHover={{ x: 10 }}
-              >
-                <FaPhone className="info-icon" />
-                <div>
-                  <h4>Call Us</h4>
-                  <p>+91 9892115908</p>
-                </div>
-              </motion.div>
+                <motion.div 
+                  className="info-item"
+                  whileHover={{ x: 10 }}
+                >
+                  <FaPhone className="info-icon" />
+                  <div>
+                    <h4>Call Us</h4>
+                    <p>+91 9892115908</p>
+                  </div>
+                </motion.div>
 
-              <motion.div 
-                className="info-item"
-                whileHover={{ x: 10 }}
-              >
-                <FaEnvelope className="info-icon" />
-                <div>
-                  <h4>Mail Us</h4>
-                  <p>saiicity2222@gmail.com</p>
-                </div>
-              </motion.div>
+                <motion.div 
+                  className="info-item"
+                  whileHover={{ x: 10 }}
+                >
+                  <FaEnvelope className="info-icon" />
+                  <div>
+                    <h4>Mail Us</h4>
+                    <p>saiicity2222@gmail.com</p>
+                  </div>
+                </motion.div>
+              </div>
             </div>
-
-            <motion.div
-              className="map-container"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30149.278643088397!2d73.077773!3d19.166362000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf2cb97eacad%3A0xc0c80775f1686f15!2sSai%20City!5e0!3m2!1sen!2sin!4v1766734574921!5m2!1sen!2sin" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0, borderRadius: '15px' }}
-                allowFullScreen="" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="SAI City Nilje Location"
-              ></iframe>
-            </motion.div>
           </motion.div>
 
           <motion.div
@@ -211,6 +194,24 @@ const Contact = () => {
                 Send Message
               </motion.button>
             </form>
+          </motion.div>
+
+          <motion.div
+            className="map-container"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30149.278643088397!2d73.077773!3d19.166362000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf2cb97eacad%3A0xc0c80775f1686f15!2sSai%20City!5e0!3m2!1sen!2sin!4v1766734574921!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="SAI City Nilje Location"
+            ></iframe>
           </motion.div>
         </div>
       </div>
